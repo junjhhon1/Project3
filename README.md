@@ -2,7 +2,7 @@
 
 Submitted by: Quoc Bao Dinh Le
 
-This web app: Ask you to name the gods from the SMT series.
+This web app: Asks you to name the gods from the SMT series.
 
 Time spent: 5 hours spent in total
 
@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='"C:\Users\junjh\github\Project2_P1\Animation2.gif"' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Animation2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  ScreenToGif
