@@ -1,0 +1,180 @@
+/* FILEPATH: c:\Users\junjh\github\Project2_P1\src\index.css */
+
+/* Variables */
+:root {
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --color-scheme: light dark;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --font-size: 16px;
+  --border-radius: 8px;
+  --border-width: 1px;
+  --border-color: transparent;
+  --padding: 1em;
+  --button-padding: 0.6em 1.2em;
+  --button-font-size: 1em;
+  --button-font-weight: 500;
+  --button-background-color: #1a1a1a;
+  --button-hover-border-color: #646cff;
+  --button-focus-outline: 4px auto -webkit-focus-ring-color;
+  --card-padding: 2em;
+  --card-border-color: #eaeaea;
+  --card-border-radius: 8px;
+  --card-height: auto;
+  --card-overflow: visible;
+  --card-answer-display: none;
+  --card-answer-margin-top: 1em;
+  --card-show-answer-answer-display: block;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+/* Buttons */
+button {
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--border-color);
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  font-family: inherit;
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--button-hover-border-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: var(--button-focus-outline);
+}
+
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--card-padding);
+  border: var(--border-width) solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  height: 50vh;
+  overflow: var(--card-overflow);
+  margin: 1em;
+  word-wrap: break-word;
+}
+.card .name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.card .ig {
+  margin-bottom: 1em;
+}
+
+.card .show-bio {
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card input, button {
+  margin: 0.5em;
+  display: inline-block;
+}
+
+.card .answer {
+  display: var(--card-answer-display);
+  margin-top: var(--card-answer-margin-top);
+}
+
+.card.show-answer .answer {
+  display: var(--card-show-answer-answer-display);
+}
+
+/* Media queries */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #213547;
+    --background-color: #ffffff;
+    --button-background-color: #f9f9f9;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size: 14px;
+    --card-padding: 1em;
+    --card-height: auto;
+    --card-overflow: visible;
+    --card-answer-margin-top: 0.5em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  button {
+    font-size: var(--button-font-size);
+    padding: 0.5em 1em;
+  }
+  .card h1 {
+    font-size: 1.5em;
+  }
+  .card p {
+    font-size: 1em;
+  }
+  .card button {
+    font-size: 1.2em;
+  }
+  .card .answer {
+    font-size: 1.2em;
+  }
+}
